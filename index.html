@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORGANIC SPICES</title>
+    <link rel="icon" type="image/png" href="./Images/bg1.jpg">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <style>
+      .product-card{
+        transition: all 0.3s ease;
+        cursor: pointer;
+      }
+      .product-card:hover{
+        transform: scale(1.05);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      }
+      .product-card:hover .btn{
+        background-color: crimson;
+        color: white;
+      }
+      .marquee{
+        width: 100%;
+        overflow: hidden;
+        background: #ea1d6f;
+        color: wheat;
+        padding: 5px 0;
+        font-weight: bold;
+        position: relative;
+      }
+      .marquee-content{
+        display: inline-block;
+        white-space: nowrap;
+        padding-left: 100%;
+        animation: scrollText 10s linear infinite;
+      }
+      @keyframes scrollText {
+        0%{
+          transform: translateX(0);
+        }
+        100%{
+          transform: translateX(-100%);
+        }
+      }
+
+    </style>
+</head>
+<body class="bg-light">
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top shadow p-lg-3">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold fs-3 text-warning" href="Resume.pdf" target="_blank">SPICES</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarsExample03">
+            <ul class="navbar-nav mx-auto text-center">
+              <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+              <li class="nav-item"><a class="nav-link active" href="#about">About</a></li>
+              <li class="nav-item"><a class="nav-link active" href="#product">Products</a></li>
+              <li class="nav-item"><a class="nav-link active" href="#contact">Contact</a></li>
+            </ul>
+            <div class="text-center">
+                <button class="btn btn-warning px-4 fw-bold rounded-pill" data-bs-toggle="modal" data-bs-target="#loginModal">Sign In</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="marquee">
+    <div  class="marquee-content">
+      Fresh Oranic Spices Available | Free Delivery | 100% Natural | Special Offers !
+    </div>
+  </div>
+
+      <section id="home" class="min-vh-100 d-flex flex-column justify-content-center align-items-center text-white text-center" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)), url('Images/bg1.jpg'); background-size: cover; background-position: center;">
+        <h1 class="display-1 fw-bold">ORGANIC SPICES</h1>
+        <p class="fs-5 px-3">Pure, natural spices straight from the farm to your kitchen</p>
+        <div class="input-group w-50 mt-4 shadow-lg">
+            <input type="text" class="form-control form-control-lg" placeholder="Email Address">
+            <button class="btn btn-warning fw-bold btn-lg" data-bs-toggle="modal" data-bs-target="#getStartedModal">Get Started</button>
+        </div>
+      </section>
+
+      <section id="about" class="min-vh-100 py-5 text-white d-flex align-items-center" style="background: linear-gradient(to right, #ea1d6f, #eb466b);">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-center">
+                    <img src="Images/about.png" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6 p-lg-5">
+                    <h1 class="fw-bold display-4">ABOUT US</h1>
+                    <p class="lead">Welcome to our website, where nature’s purity and healthy living come together. Our spices are 100% organic, chemical-free, and preserve nature's true essence through sustainable farming.</p>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <section id="product" class="py-5 bg-body-secondary min-vh-100">
+  <div class="container">
+    <h1 class="text-center mb-5 fw-bold display-5">OUR PRODUCTS</h1>
+    
+    <div class="row g-4">
+      
+      <div class="col-lg-4 col-md-6">
+        <div class="card product-card border-0 shadow-lg p-3 h-100" style="background: #e5e5e5; border-radius: 20px;">
+          <img src="Images/img1.jpg" class="card-img-top rounded mx-auto d-block" style="height: 180px; object-fit: cover;">
+          <div class="card-body text-center d-flex flex-column">
+            <h6 class="card-title fw-bold">Delmege Curry Flavoured Soya Meat</h6>
+            <h5 class="text-success fw-bold mt-auto">Rs. 140</h5>
+            <button class="btn btn-warning w-100 mt-2 rounded-pill fw-bold" data-bs-toggle="modal" data-bs-target="#orderModal1">Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="card product-card border-0 shadow-lg p-3 h-100" style="background: #e5e5e5; border-radius: 20px;">
+          <img src="Images/img2.jpg" class="card-img-top rounded mx-auto d-block" style="height: 180px; object-fit: cover;">
+          <div class="card-body text-center d-flex flex-column">
+            <h6 class="card-title fw-bold">Delmege Chicken Flavoured Soya Meat</h6>
+            <h5 class="text-success fw-bold mt-auto">Rs. 150</h5>
+            <button class="btn btn-warning w-100 mt-2 rounded-pill fw-bold" data-bs-toggle="modal" data-bs-target="#orderModal2">Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="card product-card border-0 shadow-lg p-3 h-100" style="background: #e5e5e5; border-radius: 20px;">
+          <img src="Images/img3.jpg" class="card-img-top rounded mx-auto d-block" style="height: 180px; object-fit: cover;">
+          <div class="card-body text-center d-flex flex-column">
+            <h6 class="card-title fw-bold">Malusoy Devilled Prawn Soya Meat</h6>
+            <h5 class="text-success fw-bold mt-auto">Rs. 140</h5>
+            <button class="btn btn-warning w-100 mt-2 rounded-pill fw-bold" data-bs-toggle="modal" data-bs-target="#orderModal3">Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="card product-card border-0 shadow-lg p-3 h-100" style="background: #e5e5e5; border-radius: 20px;">
+          <img src="Images/img4.jpg" class="card-img-top rounded mx-auto d-block" style="height: 180px; object-fit: cover;">
+          <div class="card-body text-center d-flex flex-column">
+            <h6 class="card-title fw-bold">Astra Fat Spread</h6>
+            <h5 class="text-success fw-bold mt-auto">Rs. 580</h5>
+            <button class="btn btn-warning w-100 mt-2 rounded-pill fw-bold" data-bs-toggle="modal" data-bs-target="#orderModal4">Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="card product-card border-0 shadow-lg p-3 h-100" style="background: #e5e5e5; border-radius: 20px;">
+          <img src="Images/img5.jpg" class="card-img-top rounded mx-auto d-block" style="height: 180px; object-fit: cover;">
+          <div class="card-body text-center d-flex flex-column">
+            <h6 class="card-title fw-bold">Flora Margarine</h6>
+            <h5 class="text-success fw-bold mt-auto">Rs. 1370</h5>
+            <button class="btn btn-warning w-100 mt-2 rounded-pill fw-bold" data-bs-toggle="modal" data-bs-target="#orderModal5">Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="card product-card border-0 shadow-lg p-3 h-100" style="background: #e5e5e5; border-radius: 20px;">
+          <img src="Images/img6.jpg" class="card-img-top rounded mx-auto d-block" style="height: 180px; object-fit: cover;">
+          <div class="card-body text-center d-flex flex-column">
+            <h6 class="card-title fw-bold">Meadowlwa Fat Spread</h6>
+            <h5 class="text-success fw-bold mt-auto">Rs. 1030</h5>
+            <button class="btn btn-warning w-100 mt-2 rounded-pill fw-bold" data-bs-toggle="modal" data-bs-target="#orderModal6">Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="card product-card border-0 shadow-lg p-3 h-100" style="background: #e5e5e5; border-radius: 20px;">
+          <img src="Images/img7.jpg" class="card-img-top rounded mx-auto d-block" style="height: 180px; object-fit: cover;">
+          <div class="card-body text-center d-flex flex-column">
+            <h6 class="card-title fw-bold">Kist Strawberry Flavour Melon Jam</h6>
+            <h5 class="text-success fw-bold mt-auto">Rs. 550</h5>
+            <button class="btn btn-warning w-100 mt-2 rounded-pill fw-bold" data-bs-toggle="modal" data-bs-target="#orderModal7">Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="card product-card border-0 shadow-lg p-3 h-100" style="background: #e5e5e5; border-radius: 20px;">
+          <img src="Images/img8.jpg" class="card-img-top rounded mx-auto d-block" style="height: 180px; object-fit: cover;">
+          <div class="card-body text-center d-flex flex-column">
+            <h6 class="card-title fw-bold">Mc Currie Chinese Chilli Paste</h6>
+            <h5 class="text-success fw-bold mt-auto">Rs. 1035</h5>
+            <button class="btn btn-warning w-100 mt-2 rounded-pill fw-bold" data-bs-toggle="modal" data-bs-target="#orderModal8">Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="card product-card border-0 shadow-lg p-3 h-100" style="background: #e5e5e5; border-radius: 20px;">
+          <img src="Images/img9.jpg" class="card-img-top rounded mx-auto d-block" style="height: 180px; object-fit: cover;">
+          <div class="card-body text-center d-flex flex-column">
+            <h6 class="card-title fw-bold">Mc Currie Sprats Badum</h6>
+            <h5 class="text-success fw-bold mt-auto">Rs. 1300</h5>
+            <button class="btn btn-warning w-100 mt-2 rounded-pill fw-bold" data-bs-toggle="modal" data-bs-target="#orderModal9">Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="card product-card border-0 shadow-lg p-3 h-100" style="background: #e5e5e5; border-radius: 20px;">
+          <img src="Images/img10.jpg" class="card-img-top rounded mx-auto d-block" style="height: 180px; object-fit: cover;">
+          <div class="card-body text-center d-flex flex-column">
+            <h6 class="card-title fw-bold">Prima Twist Noodles</h6>
+            <h5 class="text-success fw-bold mt-auto">Rs. 290</h5>
+            <button class="btn btn-warning w-100 mt-2 rounded-pill fw-bold" data-bs-toggle="modal" data-bs-target="#orderModal10">Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="card product-card border-0 shadow-lg p-3 h-100" style="background: #e5e5e5; border-radius: 20px;">
+          <img src="Images/img11.jpg" class="card-img-top rounded mx-auto d-block" style="height: 180px; object-fit: cover;">
+          <div class="card-body text-center d-flex flex-column">
+            <h6 class="card-title fw-bold">Maggi Curry Flavour Noodles</h6>
+            <h5 class="text-success fw-bold mt-auto">Rs. 120</h5>
+            <button class="btn btn-warning w-100 mt-2 rounded-pill fw-bold" data-bs-toggle="modal" data-bs-target="#orderModal11">Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="card product-card border-0 shadow-lg p-3 h-100" style="background: #e5e5e5; border-radius: 20px;">
+          <img src="Images/img12.jpg" class="card-img-top rounded mx-auto d-block" style="height: 180px; object-fit: cover;">
+          <div class="card-body text-center d-flex flex-column">
+            <h6 class="card-title fw-bold">Prima Kottu Mee Multi Pack</h6>
+            <h5 class="text-success fw-bold mt-auto">Rs. 675</h5>
+            <button class="btn btn-warning w-100 mt-2 rounded-pill fw-bold" data-bs-toggle="modal" data-bs-target="#orderModal12">Add To Cart</button>
+          </div>
+        </div>
+      </div>
+
+    </div> 
+  </div> 
+</section>
+
+      <section id="contact" class="py-5 min-vh-100 d-flex align-items-center">
+        <div class="container shadow-lg rounded overflow-hidden bg-white">
+          <div class="row align-items-stretch">
+            <div class="col-lg-6 p-0">
+              <img src="Images/contact.jpg" class="img-fluid h-100 w-100" style="object-fit: cover;">
+            </div>
+            <div class="col-lg-6 p-5 d-flex flex-column justify-content-center">
+              <h1 class="fw-bold mb-4">CONTACT US</h1>
+              <form class="vstack gap-3">
+                <input type="text" class="form-control form-control-lg" placeholder="Enter your name">
+                <input type="email" class="form-control form-control-lg" placeholder="Enter your email">
+                <textarea class="form-control form-control-lg" rows="4" placeholder="Enter your message"></textarea>
+                <button type="button" class="btn btn-warning btn-lg fw-bold rounded-pill mt-2" data-bs-toggle="modal" data-bs-target="#thanksModal">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="bg-dark text-white pt-5 pb-4">
+    <div class="container text-center text-md-start">
+        <div class="row text-center text-md-start">
+
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 fw-bold text-warning">Organic Spices</h5>
+                <p class="small text-secondary">
+                    Nature's best flavors delivered to your doorstep. We specialize in 100% chemical-free organic spices.
+                </p>
+            </div>
+
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 fw-bold text-warning">Quick Links</h5>
+                <p><a href="#home" class="text-white text-decoration-none small hover-link">Home</a></p>
+                <p><a href="#about" class="text-white text-decoration-none small hover-link">About Us</a></p>
+                <p><a href="#product" class="text-white text-decoration-none small hover-link">Products</a></p>
+            </div>
+
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3 text-secondary">
+                <h5 class="text-uppercase mb-4 fw-bold text-warning">Contact</h5>
+                <p class="small"><i class="fas fa-home me-3"></i> Nelliady, Northern Province, Sri Lanka</p>
+                <p class="small"><i class="fas fa-envelope me-3"></i> info@organicspices.com</p>
+                <p class="small"><i class="fas fa-phone me-3"></i> +94 77 876 8469 ( Jathursan )</p>
+            </div>
+
+        </div>
+
+        <hr class="mb-4 mt-4 border-secondary">
+
+        <div class="row align-items-center">
+            <div class="col-md-7 col-lg-8 text-center text-md-start">
+                <p class="small mb-0">© 2026 Copyright: <strong class="text-warning">ORGANIC SPICES</strong>. All Rights Reserved.</p>
+            </div>
+
+            <div class="col-md-5 col-lg-4">
+                <div class="text-center text-md-end">
+                    <a href="https://www.facebook.com/" class="btn btn-outline-warning btn-sm rounded-circle me-2" style="width:35px; height:35px;"><small>FB</small></a>
+                    <a href="https://www.instagram.com/" class="btn btn-outline-warning btn-sm rounded-circle me-2" style="width:35px; height:35px;"><small>IN</small></a>
+                    <a href="https://whatsapp.com/" class="btn btn-outline-warning btn-sm rounded-circle me-2" style="width:35px; height:35px;"><small>WA</small></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+      <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-0 shadow-lg" style="border-radius: 20px;">
+      
+      <div class="modal-header border-0 pb-0">
+        <h3 class="modal-title fw-bold" id="loginModalLabel">Welcome Back!</h3>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body p-4">
+        <form>
+          <div class="mb-3">
+            <label class="form-label fw-semibold">Email Address</label>
+            <input type="email" class="form-control form-control-lg bg-light border-0" placeholder="name@example.com" style="border-radius: 10px;">
+          </div>
+          
+          <div class="mb-4">
+            <label class="form-label fw-semibold">Password</label>
+            <input type="password" class="form-control form-control-lg bg-light border-0" placeholder="••••••••" style="border-radius: 10px;">
+          </div>
+
+          <div class="d-grid">
+            <button type="submit" class="btn btn-warning btn-lg fw-bold shadow-sm" style="border-radius: 10px;">Sign In</button>
+          </div>
+          
+          <div class="text-center mt-3">
+            <p class="small text-muted">Don't have an account? <a href="#" class="text-warning fw-bold text-decoration-none">Sign Up</a></p>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="getStartedModal" tabindex="-1" aria-labelledby="getStartedLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content border-0 shadow-lg" style="border-radius: 25px; overflow: hidden;">
+      <div class="row g-0">
+        
+        <div class="col-lg-5 d-none d-lg-block bg-warning text-center d-flex align-items-center justify-content-center p-5">
+            <div>
+                <h2 class="fw-bold">Join Us!</h2>
+                <p>Start your journey with 100% organic spices.</p>
+                <img src="Images/profile.png" class="img-fluid rounded-circle shadow-sm mt-3" style="width: 150px; height: 150px; object-fit: cover;">
+            </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="modal-header border-0 pb-0">
+            <h4 class="modal-title fw-bold" id="getStartedLabel">Create Account</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-4">
+            <form>
+              <div class="row g-2 mb-3">
+                <div class="col-md-6">
+                  <label class="form-label small fw-bold">First Name</label>
+                  <input type="text" class="form-control bg-light border-0" placeholder="Kanthan">
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label small fw-bold">Last Name</label>
+                  <input type="text" class="form-control bg-light border-0" placeholder="Jathus">
+                </div>
+              </div>
+              
+              <div class="mb-3">
+                <label class="form-label small fw-bold">Email</label>
+                <input type="email" class="form-control bg-light border-0" placeholder="name@example.com">
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label small fw-bold">Password</label>
+                <input type="password" class="form-control bg-light border-0" placeholder="Create password">
+              </div>
+
+              <div class="form-check mb-4">
+                <input class="form-check-input" type="checkbox" id="terms">
+                <label class="form-check-label small text-muted" for="terms">
+                  I agree to the Terms & Conditions
+                </label>
+              </div>
+
+              <div class="d-grid">
+                <button type="submit" class="btn btn-dark btn-lg fw-bold rounded-pill">Register Now</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="thanksModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-sm">
+    <div class="modal-content border-0 shadow-lg text-center" style="border-radius: 20px;">
+      <div class="modal-body p-5">
+        <div class="mb-4">
+            <div class="bg-success text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                <span class="fs-1">✔</span>
+            </div>
+        </div>
+        <h3 class="fw-bold">Thank You!</h3>
+        <p class="text-muted">Ungada message engalukku kidachiduchu. Engada team viraivaaka ungalai contact pannuvaanga.</p>
+        <button type="button" class="btn btn-dark w-100 rounded-pill fw-bold" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- menus -->
+<div class="modal fade" id="orderModal1" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-0 shadow-lg" style="border-radius: 20px;">
+      
+      <div class="modal-header border-0 pb-0">
+        <h5 class="modal-title fw-bold" id="orderModalLabel">Order Summary</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="d-flex align-items-center bg-light p-3 rounded-4 mb-3">
+            <img src="Images/img1.jpg" class="rounded shadow-sm" style="width: 70px; height: 70px; object-fit: cover;">
+            <div class="ms-3">
+                <h6 class="mb-0 fw-bold">Delmege Curry Flavoured Soya Meat</h6>
+                <p class="text-success fw-bold mb-0">Rs. 140.00</p>
+            </div>
+        </div>
+
+        <div class="container mt-5">
+          <div class="card d-flex justify-content-center">
+              <div class="card-body">
+              <form action="#">
+                  <input type="number" class="form-control" name="" placeholder="Enter the Quantity " id="qty"> <br> <br>
+                  <button type="button" class="btn btn-warning w-100" onclick="calculateTotal()">Total</button>
+              </form>
+          </div>
+          </div>
+        </div>
+
+        <script>
+          function calculateTotal()
+          {
+              quantity=parseFloat(document.getElementById('qty').value); 
+              price=140;
+  
+              total=quantity*price;
+              document.getElementById('tprice').value=total;
+  
+              document.getElementById('totalResult').value;
+          }
+        </script>
+
+        <hr class="border-secondary opacity-25">
+
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <span class="fw-bold fs-5">Total Price:</span>
+            <span class="text-success fw-bold fs-4">
+              <input type="number" placeholder="Total Price" class="form-control" name="" id="tprice">
+            </span>
+        </div>
+
+        <div class="d-grid gap-2">
+            <button class="btn btn-dark btn-lg fw-bold rounded-pill" data-bs-toggle="modal" data-bs-target="#checkoutModal" data-bs-dismiss="modal">Proceed to Checkout</button>
+            <button class="btn btn-link text-muted text-decoration-none fw-bold" data-bs-dismiss="modal">Continue Shopping</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="orderModal2" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-0 shadow-lg" style="border-radius: 20px;">
+      
+      <div class="modal-header border-0 pb-0">
+        <h5 class="modal-title fw-bold" id="orderModalLabel">Order Summary</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="d-flex align-items-center bg-light p-3 rounded-4 mb-3">
+            <img src="Images/img2.jpg" class="rounded shadow-sm" style="width: 70px; height: 70px; object-fit: cover;">
+            <div class="ms-3">
+                <h6 class="mb-0 fw-bold">Delmege Chicken Flavoured Soya Meat</h6>
+                <p class="text-success fw-bold mb-0">Rs. 150.00</p>
+            </div>
+        </div>
+
+        
+
+        
+
+        <hr class="border-secondary opacity-25">
+
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <span class="fw-bold fs-5">Total Price:</span>
+            <span class="text-success fw-bold fs-4">Rs. 150.00</span>
+        </div>
+
+        <div class="d-grid gap-2">
+            <button class="btn btn-dark btn-lg fw-bold rounded-pill" data-bs-toggle="modal" data-bs-target="#checkoutModal" data-bs-dismiss="modal">Proceed to Checkout</button>
+            <button class="btn btn-link text-muted text-decoration-none fw-bold" data-bs-dismiss="modal">Continue Shopping</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="orderModal3" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-0 shadow-lg" style="border-radius: 20px;">
+      
+      <div class="modal-header border-0 pb-0">
+        <h5 class="modal-title fw-bold" id="orderModalLabel">Order Summary</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="d-flex align-items-center bg-light p-3 rounded-4 mb-3">
+            <img src="Images/img3.jpg" class="rounded shadow-sm" style="width: 70px; height: 70px; object-fit: cover;">
+            <div class="ms-3">
+                <h6 class="mb-0 fw-bold">Malusoy Devilled Prawn Soya Meat</h6>
+                <p class="text-success fw-bold mb-0">Rs. 140.00</p>
+            </div>
+        </div>
+
+        
+
+        <hr class="border-secondary opacity-25">
+
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <span class="fw-bold fs-5">Total Price:</span>
+            <span class="text-success fw-bold fs-4">Rs. 140.00</span>
+        </div>
+
+        <div class="d-grid gap-2">
+            <button class="btn btn-dark btn-lg fw-bold rounded-pill" data-bs-toggle="modal" data-bs-target="#checkoutModal" data-bs-dismiss="modal">Proceed to Checkout</button>
+            <button class="btn btn-link text-muted text-decoration-none fw-bold" data-bs-dismiss="modal">Continue Shopping</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="orderModal4" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-0 shadow-lg" style="border-radius: 20px;">
+      
+      <div class="modal-header border-0 pb-0">
+        <h5 class="modal-title fw-bold" id="orderModalLabel">Order Summary</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="d-flex align-items-center bg-light p-3 rounded-4 mb-3">
+            <img src="Images/img4.jpg" class="rounded shadow-sm" style="width: 70px; height: 70px; object-fit: cover;">
+            <div class="ms-3">
+                <h6 class="mb-0 fw-bold">Astra Fat Spread</h6>
+                <p class="text-success fw-bold mb-0">Rs. 580.00</p>
+            </div>
+        </div>
+
+        
+
+        <hr class="border-secondary opacity-25">
+
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <span class="fw-bold fs-5">Total Price:</span>
+            <span class="text-success fw-bold fs-4">Rs. 580.00</span>
+        </div>
+
+        <div class="d-grid gap-2">
+            <button class="btn btn-dark btn-lg fw-bold rounded-pill" data-bs-toggle="modal" data-bs-target="#checkoutModal" data-bs-dismiss="modal">Proceed to Checkout</button>
+            <button class="btn btn-link text-muted text-decoration-none fw-bold" data-bs-dismiss="modal">Continue Shopping</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="orderModal5" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-0 shadow-lg" style="border-radius: 20px;">
+      
+      <div class="modal-header border-0 pb-0">
+        <h5 class="modal-title fw-bold" id="orderModalLabel">Order Summary</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="d-flex align-items-center bg-light p-3 rounded-4 mb-3">
+            <img src="Images/img5.jpg" class="rounded shadow-sm" style="width: 70px; height: 70px; object-fit: cover;">
+            <div class="ms-3">
+                <h6 class="mb-0 fw-bold">Flora Margarine</h6>
+                <p class="text-success fw-bold mb-0">Rs. 1370.00</p>
+            </div>
+        </div>
+
+        
+
+        <hr class="border-secondary opacity-25">
+
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <span class="fw-bold fs-5">Total Price:</span>
+            <span class="text-success fw-bold fs-4">Rs. 1370.00</span>
+        </div>
+
+        <div class="d-grid gap-2">
+            <button class="btn btn-dark btn-lg fw-bold rounded-pill" data-bs-toggle="modal" data-bs-target="#checkoutModal" data-bs-dismiss="modal">Proceed to Checkout</button>
+            <button class="btn btn-link text-muted text-decoration-none fw-bold" data-bs-dismiss="modal">Continue Shopping</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="orderModal6" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-0 shadow-lg" style="border-radius: 20px;">
+      
+      <div class="modal-header border-0 pb-0">
+        <h5 class="modal-title fw-bold" id="orderModalLabel">Order Summary</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="d-flex align-items-center bg-light p-3 rounded-4 mb-3">
+            <img src="Images/img6.jpg" class="rounded shadow-sm" style="width: 70px; height: 70px; object-fit: cover;">
+            <div class="ms-3">
+                <h6 class="mb-0 fw-bold">Meadowlwa Fat Spread</h6>
+                <p class="text-success fw-bold mb-0">Rs. 1030.00</p>
+            </div>
+        </div>
+
+        
+
+        <hr class="border-secondary opacity-25">
+
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <span class="fw-bold fs-5">Total Price:</span>
+            <span class="text-success fw-bold fs-4">Rs. 1030.00</span>
+        </div>
+
+        <div class="d-grid gap-2">
+            <button class="btn btn-dark btn-lg fw-bold rounded-pill" data-bs-toggle="modal" data-bs-target="#checkoutModal" data-bs-dismiss="modal">Proceed to Checkout</button>
+            <button class="btn btn-link text-muted text-decoration-none fw-bold" data-bs-dismiss="modal">Continue Shopping</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="orderModal7" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-0 shadow-lg" style="border-radius: 20px;">
+      
+      <div class="modal-header border-0 pb-0">
+        <h5 class="modal-title fw-bold" id="orderModalLabel">Order Summary</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="d-flex align-items-center bg-light p-3 rounded-4 mb-3">
+            <img src="Images/img7.jpg" class="rounded shadow-sm" style="width: 70px; height: 70px; object-fit: cover;">
+            <div class="ms-3">
+                <h6 class="mb-0 fw-bold">Kist Strawberry Flavour Melon Jam</h6>
+                <p class="text-success fw-bold mb-0">Rs. 550.00</p>
+            </div>
+        </div>
+
+        
+
+        <hr class="border-secondary opacity-25">
+
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <span class="fw-bold fs-5">Total Price:</span>
+            <span class="text-success fw-bold fs-4">Rs. 550.00</span>
+        </div>
+
+        <div class="d-grid gap-2">
+            <button class="btn btn-dark btn-lg fw-bold rounded-pill" data-bs-toggle="modal" data-bs-target="#checkoutModal" data-bs-dismiss="modal">Proceed to Checkout</button>
+            <button class="btn btn-link text-muted text-decoration-none fw-bold" data-bs-dismiss="modal">Continue Shopping</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="orderModal8" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-0 shadow-lg" style="border-radius: 20px;">
+      
+      <div class="modal-header border-0 pb-0">
+        <h5 class="modal-title fw-bold" id="orderModalLabel">Order Summary</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="d-flex align-items-center bg-light p-3 rounded-4 mb-3">
+            <img src="Images/img8.jpg" class="rounded shadow-sm" style="width: 70px; height: 70px; object-fit: cover;">
+            <div class="ms-3">
+                <h6 class="mb-0 fw-bold">Mc Currie Chinese Chilli Paste</h6>
+                <p class="text-success fw-bold mb-0">Rs. 1035.00</p>
+            </div>
+        </div>
+
+        
+
+        <hr class="border-secondary opacity-25">
+
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <span class="fw-bold fs-5">Total Price:</span>
+            <span class="text-success fw-bold fs-4">Rs. 1035.00</span>
+        </div>
+
+        <div class="d-grid gap-2">
+            <button class="btn btn-dark btn-lg fw-bold rounded-pill" data-bs-toggle="modal" data-bs-target="#checkoutModal" data-bs-dismiss="modal">Proceed to Checkout</button>
+            <button class="btn btn-link text-muted text-decoration-none fw-bold" data-bs-dismiss="modal">Continue Shopping</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="orderModal9" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-0 shadow-lg" style="border-radius: 20px;">
+      
+      <div class="modal-header border-0 pb-0">
+        <h5 class="modal-title fw-bold" id="orderModalLabel">Order Summary</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="d-flex align-items-center bg-light p-3 rounded-4 mb-3">
+            <img src="Images/img9.jpg" class="rounded shadow-sm" style="width: 70px; height: 70px; object-fit: cover;">
+            <div class="ms-3">
+                <h6 class="mb-0 fw-bold">Mc Currie Sprats Badum</h6>
+                <p class="text-success fw-bold mb-0">Rs. 1300.00</p>
+            </div>
+        </div>
+
+        
+
+        <hr class="border-secondary opacity-25">
+
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <span class="fw-bold fs-5">Total Price:</span>
+            <span class="text-success fw-bold fs-4">Rs. 1300.00</span>
+        </div>
+
+        <div class="d-grid gap-2">
+            <button class="btn btn-dark btn-lg fw-bold rounded-pill" data-bs-toggle="modal" data-bs-target="#checkoutModal" data-bs-dismiss="modal">Proceed to Checkout</button>
+            <button class="btn btn-link text-muted text-decoration-none fw-bold" data-bs-dismiss="modal">Continue Shopping</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="orderModal10" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-0 shadow-lg" style="border-radius: 20px;">
+      
+      <div class="modal-header border-0 pb-0">
+        <h5 class="modal-title fw-bold" id="orderModalLabel">Order Summary</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="d-flex align-items-center bg-light p-3 rounded-4 mb-3">
+            <img src="Images/img10.jpg" class="rounded shadow-sm" style="width: 70px; height: 70px; object-fit: cover;">
+            <div class="ms-3">
+                <h6 class="mb-0 fw-bold">Prima Twist Noodles</h6>
+                <p class="text-success fw-bold mb-0">Rs. 290.00</p>
+            </div>
+        </div>
+
+        
+
+        <hr class="border-secondary opacity-25">
+
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <span class="fw-bold fs-5">Total Price:</span>
+            <span class="text-success fw-bold fs-4">Rs. 290.00</span>
+        </div>
+
+        <div class="d-grid gap-2">
+            <button class="btn btn-dark btn-lg fw-bold rounded-pill" data-bs-toggle="modal" data-bs-target="#checkoutModal" data-bs-dismiss="modal">Proceed to Checkout</button>
+            <button class="btn btn-link text-muted text-decoration-none fw-bold" data-bs-dismiss="modal">Continue Shopping</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="orderModal11" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-0 shadow-lg" style="border-radius: 20px;">
+      
+      <div class="modal-header border-0 pb-0">
+        <h5 class="modal-title fw-bold" id="orderModalLabel">Order Summary</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="d-flex align-items-center bg-light p-3 rounded-4 mb-3">
+            <img src="Images/img11.jpg" class="rounded shadow-sm" style="width: 70px; height: 70px; object-fit: cover;">
+            <div class="ms-3">
+                <h6 class="mb-0 fw-bold">Maggi Curry Flavour Noodles</h6>
+                <p class="text-success fw-bold mb-0">Rs. 120.00</p>
+            </div>
+        </div>
+
+        
+
+        <hr class="border-secondary opacity-25">
+
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <span class="fw-bold fs-5">Total Price:</span>
+            <span class="text-success fw-bold fs-4">Rs. 120.00</span>
+        </div>
+
+        <div class="d-grid gap-2">
+            <button class="btn btn-dark btn-lg fw-bold rounded-pill" data-bs-toggle="modal" data-bs-target="#checkoutModal" data-bs-dismiss="modal">Proceed to Checkout</button>
+            <button class="btn btn-link text-muted text-decoration-none fw-bold" data-bs-dismiss="modal">Continue Shopping</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="orderModal12" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-0 shadow-lg" style="border-radius: 20px;">
+      
+      <div class="modal-header border-0 pb-0">
+        <h5 class="modal-title fw-bold" id="orderModalLabel">Order Summary</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="d-flex align-items-center bg-light p-3 rounded-4 mb-3">
+            <img src="Images/img12.jpg" class="rounded shadow-sm" style="width: 70px; height: 70px; object-fit: cover;">
+            <div class="ms-3">
+                <h6 class="mb-0 fw-bold">Prima Kottu Mee Multi Pack</h6>
+                <p class="text-success fw-bold mb-0">Rs. 675.00</p>
+            </div>
+        </div>
+
+        
+
+        <hr class="border-secondary opacity-25">
+
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <span class="fw-bold fs-5">Total Price:</span>
+            <span class="text-success fw-bold fs-4">Rs. 675.00</span>
+        </div>
+
+        <div class="d-grid gap-2">
+            <button class="btn btn-dark btn-lg fw-bold rounded-pill" data-bs-toggle="modal" data-bs-target="#checkoutModal" data-bs-dismiss="modal">Proceed to Checkout</button>
+            <button class="btn btn-link text-muted text-decoration-none fw-bold" data-bs-dismiss="modal">Continue Shopping</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="checkoutModal" tabindex="-1" aria-labelledby="checkoutModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content border-0 shadow-lg" style="border-radius: 20px;">
+      
+      <div class="modal-header border-0 pb-0">
+        <h5 class="modal-title fw-bold" id="checkoutModalLabel">Checkout Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body p-4">
+        <form>
+          <div class="row g-3">
+            <div class="col-md-12">
+                <h6 class="fw-bold mb-3 text-secondary">Shipping Information</h6>
+            </div>
+            <div class="col-md-12">
+                <input type="text" class="form-control bg-light border-0" placeholder="Full Name" required>
+            </div>
+            <div class="col-md-6">
+                <input type="text" class="form-control bg-light border-0" placeholder="Phone Number" required>
+            </div>
+            <div class="col-md-6">
+                <input type="text" class="form-control bg-light border-0" placeholder="District" required>
+            </div>
+            <div class="col-md-12">
+                <textarea class="form-control bg-light border-0" rows="2" placeholder="Delivery Address"></textarea>
+            </div>
+
+            <div class="col-md-12 mt-4">
+                <h6 class="fw-bold mb-3 text-secondary">Payment Method</h6>
+                <div class="d-flex gap-3">
+                    <div class="form-check border p-3 rounded-3 flex-fill text-center">
+                        <input class="form-check-input" type="radio" name="payment" id="cash" checked>
+                        <label class="form-check-label fw-bold" for="cash">Cash on Delivery</label>
+                    </div>
+                    <div class="form-check border p-3 rounded-3 flex-fill text-center">
+                        <input class="form-check-input" type="radio" name="payment" id="card">
+                        <label class="form-check-label fw-bold" for="card">Card Payment</label>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="d-grid mt-4">
+            <button type="button" class="btn btn-warning btn-lg fw-bold rounded-pill" data-bs-toggle="modal" data-bs-target="#thanksModal" data-bs-dismiss="modal">
+                Confirm Order
+            </button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+      <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
